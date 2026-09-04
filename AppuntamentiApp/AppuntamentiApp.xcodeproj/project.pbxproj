@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001241A0001 /* AppuntamentiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000001241A0000 /* AppuntamentiApp.swift */; };
+		A1000003241A0003 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000003241A0002 /* Appointment.swift */; };
+		A1000005241A0005 /* AppointmentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000005241A0004 /* AppointmentStore.swift */; };
+		A1000007241A0007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000007241A0006 /* ContentView.swift */; };
+		A1000009241A0009 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000009241A0008 /* HomeView.swift */; };
+		A100000B241A000B /* AppointmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000B241A000A /* AppointmentListView.swift */; };
+		A100000D241A000D /* AddAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000D241A000C /* AddAppointmentView.swift */; };
+		A100000F241A000F /* AppointmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000F241A000E /* AppointmentDetailView.swift */; };
+		A1000011241A0011 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000011241A0010 /* CalendarView.swift */; };
+		A1000013241A0013 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000013241A0012 /* SettingsView.swift */; };
+		A1000015241A0015 /* AppointmentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000015241A0014 /* AppointmentCard.swift */; };
+		A1000017241A0017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000017241A0016 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1000001241A0000 /* AppuntamentiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppuntamentiApp.swift; sourceTree = "<group>"; };
+		A1000003241A0002 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		A1000005241A0004 /* AppointmentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentStore.swift; sourceTree = "<group>"; };
+		A1000007241A0006 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1000009241A0008 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A100000B241A000A /* AppointmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentListView.swift; sourceTree = "<group>"; };
+		A100000D241A000C /* AddAppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAppointmentView.swift; sourceTree = "<group>"; };
+		A100000F241A000E /* AppointmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailView.swift; sourceTree = "<group>"; };
+		A1000011241A0010 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		A1000013241A0012 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1000015241A0014 /* AppointmentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCard.swift; sourceTree = "<group>"; };
+		A1000017241A0016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000019241A0018 /* AppuntamentiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppuntamentiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A100001B241A001A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1000020241A0020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1000021241A0021 = {
+			isa = PBXGroup;
+			children = (
+				A1000022241A0022 /* AppuntamentiApp */,
+				A1000023241A0023 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1000022241A0022 /* AppuntamentiApp */ = {
+			isa = PBXGroup;
+			children = (
+				A1000001241A0000 /* AppuntamentiApp.swift */,
+				A1000024241A0024 /* Models */,
+				A1000025241A0025 /* Services */,
+				A1000026241A0026 /* Views */,
+				A1000017241A0016 /* Assets.xcassets */,
+				A100001B241A001A /* Info.plist */,
+			);
+			path = AppuntamentiApp;
+			sourceTree = "<group>";
+		};
+		A1000023241A0023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000019241A0018 /* AppuntamentiApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1000024241A0024 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1000003241A0002 /* Appointment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1000025241A0025 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A1000005241A0004 /* AppointmentStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1000026241A0026 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1000007241A0006 /* ContentView.swift */,
+				A1000009241A0008 /* HomeView.swift */,
+				A100000B241A000A /* AppointmentListView.swift */,
+				A100000D241A000C /* AddAppointmentView.swift */,
+				A100000F241A000E /* AppointmentDetailView.swift */,
+				A1000011241A0010 /* CalendarView.swift */,
+				A1000013241A0012 /* SettingsView.swift */,
+				A1000027241A0027 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1000027241A0027 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A1000015241A0014 /* AppointmentCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1000030241A0030 /* AppuntamentiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000040241A0040 /* Build configuration list for PBXNativeTarget "AppuntamentiApp" */;
+			buildPhases = (
+				A1000031241A0031 /* Sources */,
+				A1000020241A0020 /* Frameworks */,
+				A1000032241A0032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppuntamentiApp;
+			productName = AppuntamentiApp;
+			productReference = A1000019241A0018 /* AppuntamentiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1000050241A0050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1000030241A0030 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A1000051241A0051 /* Build configuration list for PBXProject "AppuntamentiApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = it;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				it,
+				Base,
+			);
+			mainGroup = A1000021241A0021;
+			productRefGroup = A1000023241A0023 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1000030241A0030 /* AppuntamentiApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000032241A0032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000017241A0017 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000031241A0031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000001241A0001 /* AppuntamentiApp.swift in Sources */,
+				A1000003241A0003 /* Appointment.swift in Sources */,
+				A1000005241A0005 /* AppointmentStore.swift in Sources */,
+				A1000007241A0007 /* ContentView.swift in Sources */,
+				A1000009241A0009 /* HomeView.swift in Sources */,
+				A100000B241A000B /* AppointmentListView.swift in Sources */,
+				A100000D241A000D /* AddAppointmentView.swift in Sources */,
+				A100000F241A000F /* AppointmentDetailView.swift in Sources */,
+				A1000011241A0011 /* CalendarView.swift in Sources */,
+				A1000013241A0013 /* SettingsView.swift in Sources */,
+				A1000015241A0015 /* AppointmentCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1000060241A0060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1000061241A0061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1000062241A0062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppuntamentiApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Appuntamenti;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.AppuntamentiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1000063241A0063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppuntamentiApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Appuntamenti;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.AppuntamentiApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1000040241A0040 /* Build configuration list for PBXNativeTarget "AppuntamentiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000062241A0062 /* Debug */,
+				A1000063241A0063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000051241A0051 /* Build configuration list for PBXProject "AppuntamentiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000060241A0060 /* Debug */,
+				A1000061241A0061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1000050241A0050 /* Project object */;
+}
