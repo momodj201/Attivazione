@@ -111,6 +111,15 @@ struct SettingsView: View {
                         }
                     }
                 }
+                
+                Section {
+                    HStack {
+                        Spacer()
+                        DBMLogoCompact()
+                        Spacer()
+                    }
+                    .listRowBackground(Color.clear)
+                }
             }
             .navigationTitle("Impostazioni")
             .alert("Elimina Tutti", isPresented: $showingClearAlert) {
@@ -177,7 +186,7 @@ struct AboutView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
-                VStack(spacing: 12) {
+                VStack(spacing: 16) {
                     Image(systemName: "calendar.badge.clock")
                         .font(.system(size: 60))
                         .foregroundColor(.blue)
@@ -189,6 +198,8 @@ struct AboutView: View {
                     Text("Versione 1.0.0")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
+                    
+                    DBMLogoBadge()
                 }
                 .padding(.top, 40)
                 
@@ -211,10 +222,27 @@ struct AboutView: View {
                 .cornerRadius(16)
                 .padding(.horizontal)
                 
-                Text("Sviluppato con ❤️ in Italia")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .padding(.bottom, 40)
+                VStack(spacing: 20) {
+                    Divider()
+                        .padding(.horizontal)
+                    
+                    Text("Sviluppato da")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                    
+                    DBMLogoView(size: .medium)
+                    
+                    VStack(spacing: 4) {
+                        Text("www.dbminformatica.it")
+                            .font(.footnote)
+                            .foregroundColor(.blue)
+                        
+                        Text("info@dbminformatica.it")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                }
+                .padding(.bottom, 40)
             }
         }
         .background(Color(.systemGroupedBackground))

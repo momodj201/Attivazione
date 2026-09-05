@@ -127,4 +127,18 @@ Questo progetto è rilasciato sotto licenza MIT.
 
 ---
 
-Sviluppato con ❤️ in Italia
+## Sviluppato da
+
+<p align="center">
+  <strong>DBM Informatica</strong><br>
+  Soluzioni digitali per il tuo business
+</p>
+
+<p align="center">
+  🌐 www.dbminformatica.it<br>
+  ✉️ info@dbminformatica.it
+</p>
+
+---
+
+© 2026 DBM Informatica. Tutti i diritti riservati.
