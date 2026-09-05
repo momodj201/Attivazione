@@ -1,0 +1,4 @@
+{
+  "name": "AppuntamentiApp (Swift/iOS)",
+  "install": "bash .cursor/install.sh"
+}
