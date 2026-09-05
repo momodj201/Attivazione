@@ -3,9 +3,19 @@ import SwiftUI
 struct DBMLogoView: View {
     var size: LogoSize = .medium
     var showTagline: Bool = true
+    var useImage: Bool = true
     
     enum LogoSize {
         case small, medium, large, extraLarge
+        
+        var imageSize: CGFloat {
+            switch self {
+            case .small: return 60
+            case .medium: return 100
+            case .large: return 150
+            case .extraLarge: return 200
+            }
+        }
         
         var fontSize: CGFloat {
             switch self {
@@ -37,32 +47,41 @@ struct DBMLogoView: View {
     
     var body: some View {
         VStack(spacing: size.spacing) {
-            HStack(spacing: size.spacing) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: size.iconSize / 5)
-                        .fill(
-                            LinearGradient(
-                                colors: [Color.blue, Color.blue.opacity(0.7)],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
+            if useImage {
+                Image("DBMLogo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: size.imageSize, height: size.imageSize)
+                    .cornerRadius(size.imageSize / 5)
+                    .shadow(color: .blue.opacity(0.3), radius: 8, x: 0, y: 4)
+            } else {
+                HStack(spacing: size.spacing) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: size.iconSize / 5)
+                            .fill(
+                                LinearGradient(
+                                    colors: [Color.blue, Color.blue.opacity(0.7)],
+                                    startPoint: .topLeading,
+                                    endPoint: .bottomTrailing
+                                )
                             )
-                        )
-                        .frame(width: size.iconSize, height: size.iconSize)
-                        .shadow(color: .blue.opacity(0.3), radius: 8, x: 0, y: 4)
+                            .frame(width: size.iconSize, height: size.iconSize)
+                            .shadow(color: .blue.opacity(0.3), radius: 8, x: 0, y: 4)
+                        
+                        Image(systemName: "desktopcomputer")
+                            .font(.system(size: size.iconSize * 0.5, weight: .medium))
+                            .foregroundColor(.white)
+                    }
                     
-                    Image(systemName: "desktopcomputer")
-                        .font(.system(size: size.iconSize * 0.5, weight: .medium))
-                        .foregroundColor(.white)
-                }
-                
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("DBM")
-                        .font(.system(size: size.fontSize, weight: .bold, design: .rounded))
-                        .foregroundColor(.primary)
-                    
-                    Text("informatica")
-                        .font(.system(size: size.fontSize * 0.5, weight: .medium, design: .rounded))
-                        .foregroundColor(.blue)
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text("DBM")
+                            .font(.system(size: size.fontSize, weight: .bold, design: .rounded))
+                            .foregroundColor(.primary)
+                        
+                        Text("informatica")
+                            .font(.system(size: size.fontSize * 0.5, weight: .medium, design: .rounded))
+                            .foregroundColor(.blue)
+                    }
                 }
             }
             
