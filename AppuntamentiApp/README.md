@@ -2,6 +2,19 @@
 
 Un'applicazione iOS moderna e intuitiva per gestire i tuoi appuntamenti personali, sviluppata in SwiftUI.
 
+## 🚀 Installazione Rapida
+
+**Vedi [SETUP.md](SETUP.md) per le istruzioni complete di installazione.**
+
+### Passi Rapidi:
+1. Apri Xcode → File → New → Project → iOS App
+2. Nome: `AppuntamentiApp`, Interface: SwiftUI
+3. Elimina il `ContentView.swift` di default
+4. Trascina tutti i file dalla cartella `AppuntamentiApp/` nel progetto
+5. Premi `Cmd + R` per eseguire
+
+---
+
 ## Funzionalità
 
 ### Home
